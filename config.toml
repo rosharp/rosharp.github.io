@@ -1,3 +1,4 @@
+publishDir = "docs"
 baseurl      = "https://rosharp.github.io/"
 title        = "My Blog"
 languageCode = "en-us"
