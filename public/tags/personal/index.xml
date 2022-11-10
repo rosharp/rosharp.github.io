@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>personal on Palenight Blues</title>
+    <link>https://rosharp.github.io/tags/personal/</link>
+    <description>Recent content in personal on Palenight Blues</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 10 Nov 2022 19:46:31 +0500</lastBuildDate><atom:link href="https://rosharp.github.io/tags/personal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Autobiography</title>
+      <link>https://rosharp.github.io/autobiography/</link>
+      <pubDate>Thu, 10 Nov 2022 19:46:31 +0500</pubDate>
+      
+      <guid>https://rosharp.github.io/autobiography/</guid>
+      <description>This is my autobio.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://rosharp.github.io/about/</link>
+      <pubDate>Thu, 10 Nov 2022 19:43:19 +0500</pubDate>
+      
+      <guid>https://rosharp.github.io/about/</guid>
+      <description>Here is some content. All in Markdown.
+List asdf -asdf Dictionary Definitions asdf asdf </description>
+    </item>
+    
+  </channel>
+</rss>
