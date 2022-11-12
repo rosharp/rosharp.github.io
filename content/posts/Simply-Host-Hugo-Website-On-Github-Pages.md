@@ -4,7 +4,7 @@ date: 2022-11-12T18:14:20+05:00
 ---
 
 Documentation:
-* [Hugo documentation](https://gohugo.io/documentation/)
+* [Hugo](https://gohugo.io/documentation/)
 * [Github Pages](https://docs.github.com/en/rest/pages)
 
 ## Prerequisites

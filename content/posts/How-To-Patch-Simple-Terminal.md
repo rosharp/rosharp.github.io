@@ -1,9 +1,7 @@
 ---
-title: Install and patch st 
+title: How to install and patch st 
 date: 2022-11-09T19:30:30+05:00
 ---
-
-# How to install and patch st 
 
 [Patching documentation](https://suckless.org/hacking/)
 
