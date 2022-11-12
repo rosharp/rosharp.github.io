@@ -20,6 +20,7 @@ bspwm polybar xrandr autorandr Detect connected displays First of all, we want t
 &amp;gt; xrandr --listmonitors Monitors: 2 0: +*eDP1 1920/280x1080/160+0+0 eDP1 1: +HDMI2 1680/470x1050/300+1920+0 HDMI2 Let&amp;rsquo;s remember these; I&amp;rsquo;ll describe my monitors as eDP1 (my laptop&amp;rsquo;s display) and HDMI2 (external monitor).
 Startup script Next, we&amp;rsquo;re going to create a script which detects an external monitor when connected, moves bspwm desktops to it and removes those when a monitor is disconnected.</description>
             <content type="html"><![CDATA[<h1 id="multiple-monitor-setup---bspwm--polybar">Multiple monitor setup - bspwm + Polybar</h1>
+<p><img src="/Multiple-Monitor-Setup-bspwm-+-Polybar/IMG_0120.PNG" alt="Image"></p>
 <p>Required packages:</p>
 <ul>
 <li>bspwm</li>
@@ -156,20 +157,6 @@ pin-workspaces = true
 </span></span></code></pre></div><p>And make it executable:</p>
 <p><code>chmod +x $HOME/.config/autorandr/postswitch</code></p>
 <p>That&rsquo;s it! Now, you will be able to switch between multiple separate desktops on each display. Everything should work fine after reconnecting an external display - you will still get several new desktops on it.</p>
-]]></content>
-        </item>
-        
-        <item>
-            <title>New Blog Post</title>
-            <link>https://rosharp.github.io/posts/new-blog-post/</link>
-            <pubDate>Thu, 10 Nov 2022 19:49:41 +0500</pubDate>
-            
-            <guid>https://rosharp.github.io/posts/new-blog-post/</guid>
-            <description>Here is my new blog post.
-See my about page.</description>
-            <content type="html"><![CDATA[<p><img src="/P1300674.JPG" alt="my image"></p>
-<p>Here is my new blog post.</p>
-<p>See my <a href="/about">about page</a>.</p>
 ]]></content>
         </item>
         
