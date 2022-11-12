@@ -1,5 +1,5 @@
 ---
-title: Install and patch st 
+title: Host Hugo on Github Pages 
 date: 2022-11-12T18:14:20+05:00
 ---
 
