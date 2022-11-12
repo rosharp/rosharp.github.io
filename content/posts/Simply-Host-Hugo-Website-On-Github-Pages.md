@@ -1,3 +1,8 @@
+---
+title: Install and patch st 
+date: 2022-11-12T18:14:20+05:00
+---
+
 # How to easily host a Hugo website on Github Pages
 
 Documentation:
