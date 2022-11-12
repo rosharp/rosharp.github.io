@@ -108,7 +108,8 @@ Let's create a separate Polybar instance for the external monitor.
 Pay attention to adding `pin-workspaces = true` to both main and secondary bars. 
 
 $HOME/.config/polybar/config.ini
-```
+
+```shell
 [bar/main]
 width = 100%
 height = 30
