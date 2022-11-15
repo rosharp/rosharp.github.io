@@ -29,7 +29,7 @@ mkdir $HOME/Pictures/Screenshots/
 
 ## sxhkdrc
 
-Let's create keybindingds in `sxhkdrc` (by default, located in `$HOME/.config/sxhkd/sxhkdrc`).
+Let's create keybindings in `sxhkdrc` (by default, located in `$HOME/.config/sxhkd/sxhkdrc`).
 
 1. Take a screenshot of a certain area and save it:
 
