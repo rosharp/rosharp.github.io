@@ -10,7 +10,7 @@
         <atom:link href="https://rosharp.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
-            <title>Take Screenshots with Bspwm and ImageMagick</title>
+            <title>Take Screenshots in Bspwm with ImageMagick</title>
             <link>https://rosharp.github.io/posts/take-screenshots-in-bspwm-with-imagemagick/</link>
             <pubDate>Tue, 15 Nov 2022 14:06:53 +0500</pubDate>
             

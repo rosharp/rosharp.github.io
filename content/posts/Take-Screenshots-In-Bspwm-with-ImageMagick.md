@@ -1,5 +1,5 @@
 ---
-title: Take Screenshots with Bspwm and ImageMagick 
+title: Take Screenshots in Bspwm with ImageMagick 
 date: 2022-11-15T14:06:53+05:00
 ---
 
