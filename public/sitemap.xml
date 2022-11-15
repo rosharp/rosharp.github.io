@@ -2,13 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://rosharp.github.io/posts/multiple-monitor-setup-bspwm-&#43;-polybar/</loc>
-    <lastmod>2022-11-10T19:49:41+05:00</lastmod>
-  </url><url>
     <loc>https://rosharp.github.io/posts/</loc>
-    <lastmod>2022-11-10T19:49:41+05:00</lastmod>
+    <lastmod>2022-11-15T14:06:53+05:00</lastmod>
   </url><url>
     <loc>https://rosharp.github.io/</loc>
+    <lastmod>2022-11-15T14:06:53+05:00</lastmod>
+  </url><url>
+    <loc>https://rosharp.github.io/posts/take-screenshots-in-bspwm-with-imagemagick/</loc>
+    <lastmod>2022-11-15T14:06:53+05:00</lastmod>
+  </url><url>
+    <loc>https://rosharp.github.io/posts/simply-host-hugo-website-on-github-pages/</loc>
+    <lastmod>2022-11-12T18:14:20+05:00</lastmod>
+  </url><url>
+    <loc>https://rosharp.github.io/posts/multiple-monitor-setup-bspwm-&#43;-polybar/</loc>
     <lastmod>2022-11-10T19:49:41+05:00</lastmod>
   </url><url>
     <loc>https://rosharp.github.io/about/</loc>

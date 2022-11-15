@@ -6,21 +6,107 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Thu, 10 Nov 2022 19:49:41 +0500</lastBuildDate>
+        <lastBuildDate>Tue, 15 Nov 2022 14:06:53 +0500</lastBuildDate>
         <atom:link href="https://rosharp.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
-            <title>Multimonitor setup in bspwm</title>
+            <title>Take Screenshots with Bspwm and ImageMagick</title>
+            <link>https://rosharp.github.io/posts/take-screenshots-in-bspwm-with-imagemagick/</link>
+            <pubDate>Tue, 15 Nov 2022 14:06:53 +0500</pubDate>
+            
+            <guid>https://rosharp.github.io/posts/take-screenshots-in-bspwm-with-imagemagick/</guid>
+            <description>Prerequisites Packages:
+bspwm sxhkd imagemagick (in some repos &amp;lsquo;ImageMagick&amp;rsquo;) notify-send bspwmrc Initialize sxhkd in your bspwmrc (by default, located in $HOME/.config/bspwm/bspwmrc);
+pgrep -x sxhkd &amp;gt; /dev/null || sxhkd &amp;amp; Custom directory You can create a custom directory to keep your screenshots in there, for example:
+mkdir $HOME/Pictures/Screenshots/ sxhkdrc Let&amp;rsquo;s create keybindingds in sxhkdrc (by default, located in $HOME/.config/sxhkd/sxhkdrc).
+Take a screenshot of a certain area and save it: super + p import $HOME/Pictures/Screenshots/Screenshot\ $(date).</description>
+            <content type="html"><![CDATA[<h2 id="prerequisites">Prerequisites</h2>
+<p>Packages:</p>
+<ul>
+<li>bspwm</li>
+<li>sxhkd</li>
+<li>imagemagick (in some repos &lsquo;ImageMagick&rsquo;)</li>
+<li>notify-send</li>
+</ul>
+<h2 id="bspwmrc">bspwmrc</h2>
+<p>Initialize <code>sxhkd</code> in your <code>bspwmrc</code> (by default, located in <code>$HOME/.config/bspwm/bspwmrc</code>);</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>pgrep -x sxhkd &gt; /dev/null <span style="color:#f92672">||</span> sxhkd &amp;
+</span></span></code></pre></div><h2 id="custom-directory">Custom directory</h2>
+<p>You can create a custom directory to keep your screenshots in there, for example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>mkdir $HOME/Pictures/Screenshots/
+</span></span></code></pre></div><h2 id="sxhkdrc">sxhkdrc</h2>
+<p>Let&rsquo;s create keybindingds in <code>sxhkdrc</code> (by default, located in <code>$HOME/.config/sxhkd/sxhkdrc</code>).</p>
+<ol>
+<li>Take a screenshot of a certain area and save it:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>super + p
+</span></span><span style="display:flex;"><span>  import $HOME/Pictures/Screenshots/Screenshot<span style="color:#ae81ff">\ </span><span style="color:#66d9ef">$(</span>date<span style="color:#66d9ef">)</span>.png
+</span></span></code></pre></div><ol start="2">
+<li>Take a screenshot of the entire screen (including external displays):</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>super + shift + p
+</span></span><span style="display:flex;"><span>  import -window root $HOME/Pictures/Screenshots/Screenshot<span style="color:#ae81ff">\ </span><span style="color:#66d9ef">$(</span>date<span style="color:#66d9ef">)</span>.png
+</span></span></code></pre></div><blockquote>
+<p>If you&rsquo;re using <code>xbanish</code> to hide the cursor when typing, it will cause the cursor to disappear after pressing a keybinding to take a screenshot of a certain area.</p>
+</blockquote>
+<h2 id="adding-notification">Adding notification</h2>
+<p>You may add a pop-up notification after taking a screenshot, for example, modifying what we&rsquo;ve previously written:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>super + p
+</span></span><span style="display:flex;"><span>  import $HOME/Pictures/Screenshots/Screenshot<span style="color:#ae81ff">\ </span><span style="color:#66d9ef">$(</span>date<span style="color:#66d9ef">)</span>.png <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  <span style="color:#f92672">&amp;&amp;</span> notify-send <span style="color:#e6db74">&#34;Screenshot was taken&#34;</span>
+</span></span></code></pre></div>]]></content>
+        </item>
+        
+        <item>
+            <title>How to easily host a Hugo website on Github Pages</title>
+            <link>https://rosharp.github.io/posts/simply-host-hugo-website-on-github-pages/</link>
+            <pubDate>Sat, 12 Nov 2022 18:14:20 +0500</pubDate>
+            
+            <guid>https://rosharp.github.io/posts/simply-host-hugo-website-on-github-pages/</guid>
+            <description>Documentation:
+Hugo Github Pages Prerequisites Steps from Quick Start Have some content in .md in /content folder Theme installed (themes list) Separate Github repository for the project created Action If you have cloned repositories in the /themes folder, remove .git directories in them. Otherwise, it will cause an error when building remotely.
+Build your project into /public folder: hugo Add all the files from the project root folder to a commit and push it to the repo.</description>
+            <content type="html"><![CDATA[<p>Documentation:</p>
+<ul>
+<li><a href="https://gohugo.io/documentation/">Hugo</a></li>
+<li><a href="https://docs.github.com/en/rest/pages">Github Pages</a></li>
+</ul>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Steps from <a href="https://gohugo.io/getting-started/quick-start/">Quick Start</a></li>
+<li>Have some content in <code>.md</code> in <code>/content</code> folder</li>
+<li>Theme installed (<a href="https://hugothemesfree.com/">themes list</a>)</li>
+<li>Separate Github repository for the project created</li>
+</ul>
+<h2 id="action">Action</h2>
+<p><em>If you have cloned repositories in the <code>/themes</code> folder, remove <code>.git</code> directories in them. Otherwise, it will cause an error when building remotely.</em></p>
+<ol>
+<li>Build your project into <code>/public</code> folder:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo
+</span></span></code></pre></div><ol start="2">
+<li>Add all the files from the project root folder to a commit and push it to the repo.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git add . <span style="color:#f92672">&amp;&amp;</span> git commit -m <span style="color:#e6db74">&#34;Initial commit&#34;</span> <span style="color:#f92672">&amp;&amp;</span> git push -u
+</span></span></code></pre></div><ol start="3">
+<li>Open your repository on Github and click &ldquo;Settings&rdquo;. Open &ldquo;Pages&rdquo; and in &ldquo;Branch&rdquo; subsection choose &ldquo;/docs&rdquo; folder. Click &ldquo;Save&rdquo;.</li>
+</ol>
+<p>You may use Github Actions, but the easier way is to deploy from &ldquo;/docs&rdquo; folder directly.</p>
+<p>Now, your project must be built and available by the URL. If not, open &ldquo;Actions&rdquo; in the navbar and see the last build attempt.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Multiple monitor setup - bspwm &#43; Polybar</title>
             <link>https://rosharp.github.io/posts/multiple-monitor-setup-bspwm-&#43;-polybar/</link>
             <pubDate>Thu, 10 Nov 2022 19:49:41 +0500</pubDate>
             
             <guid>https://rosharp.github.io/posts/multiple-monitor-setup-bspwm-&#43;-polybar/</guid>
-            <description>Multiple monitor setup - bspwm + Polybar Required packages:
+            <description>Required packages:
 bspwm polybar xrandr autorandr Detect connected displays First of all, we want to check the discriptors of connected displays with this command:
 &amp;gt; xrandr --listmonitors Monitors: 2 0: +*eDP1 1920/280x1080/160+0+0 eDP1 1: +HDMI2 1680/470x1050/300+1920+0 HDMI2 Let&amp;rsquo;s remember these; I&amp;rsquo;ll describe my monitors as eDP1 (my laptop&amp;rsquo;s display) and HDMI2 (external monitor).
 Startup script Next, we&amp;rsquo;re going to create a script which detects an external monitor when connected, moves bspwm desktops to it and removes those when a monitor is disconnected.</description>
-            <content type="html"><![CDATA[<h1 id="multiple-monitor-setup---bspwm--polybar">Multiple monitor setup - bspwm + Polybar</h1>
-<p><img src="/Multiple-Monitor-Setup-bspwm-+-Polybar/IMG_0120.PNG" alt="Image"></p>
+            <content type="html"><![CDATA[<p><img src="/Multiple-Monitor-Setup-bspwm-+-Polybar/IMG_0120.PNG" alt="Image"></p>
 <p>Required packages:</p>
 <ul>
 <li>bspwm</li>
@@ -102,32 +188,32 @@ Startup script Next, we&amp;rsquo;re going to create a script which detects an e
 <p>Let&rsquo;s create a separate Polybar instance for the external monitor.</p>
 <p>Pay attention to adding <code>pin-workspaces = true</code> to both main and secondary bars.</p>
 <p>$HOME/.config/polybar/config.ini</p>
-<pre tabindex="0"><code>[bar/main]
-width = 100%
-height = 30
-offset-y = 0
-bottom = false 
-fixed-center = true
-
-monitor = eDP1
-
-pin-workspaces = true
-
-...
-
-[bar/external]
-width = 100%
-height = 30
-offset-y = 0
-bottom = false 
-fixed-center = true
-
-monitor = HDMI2
-
-pin-workspaces = true
-
-...
-</code></pre><p>Launch the secondary (external) Polybar instance conditionally when the external monitor is connected. My launch script looks like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#f92672">[</span>bar/main<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>width <span style="color:#f92672">=</span> 100%
+</span></span><span style="display:flex;"><span>height <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span>
+</span></span><span style="display:flex;"><span>offset-y <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>bottom <span style="color:#f92672">=</span> false 
+</span></span><span style="display:flex;"><span>fixed-center <span style="color:#f92672">=</span> true
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>monitor <span style="color:#f92672">=</span> eDP1
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>pin-workspaces <span style="color:#f92672">=</span> true
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>bar/external<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>width <span style="color:#f92672">=</span> 100%
+</span></span><span style="display:flex;"><span>height <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span>
+</span></span><span style="display:flex;"><span>offset-y <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>bottom <span style="color:#f92672">=</span> false 
+</span></span><span style="display:flex;"><span>fixed-center <span style="color:#f92672">=</span> true
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>monitor <span style="color:#f92672">=</span> HDMI2
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>pin-workspaces <span style="color:#f92672">=</span> true
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><p>Launch the secondary (external) Polybar instance conditionally when the external monitor is connected. My launch script looks like this:</p>
 <p>$HOME/.config/polybar/launch.sh</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env bash
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
@@ -161,18 +247,18 @@ pin-workspaces = true
         </item>
         
         <item>
-            <title>Install and patch st</title>
+            <title>How to install and patch st</title>
             <link>https://rosharp.github.io/posts/how-to-patch-simple-terminal/</link>
             <pubDate>Wed, 09 Nov 2022 19:30:30 +0500</pubDate>
             
             <guid>https://rosharp.github.io/posts/how-to-patch-simple-terminal/</guid>
-            <description>How to install and patch st Patching documentation
+            <description>Patching documentation
 Click the download link on the st website at the very bottom and extract (replace the version number):
 cd $HOME/Downloads/ tar xvf st-X.X.tar.gz Now, you can build and have a working binary of st (although, very minimal):
 cd st-X.X/ make clean install Check out the available patches here. Take the one you need and download with:
-curl -O &amp;lt;download link&amp;gt; Apply the patch:</description>
-            <content type="html"><![CDATA[<h1 id="how-to-install-and-patch-st">How to install and patch st</h1>
-<p><a href="https://suckless.org/hacking/">Patching documentation</a></p>
+curl -O &amp;lt;download link&amp;gt; Apply the patch:
+patch -p1 &amp;lt; path/to/patch.diff And rebuild the binary:</description>
+            <content type="html"><![CDATA[<p><a href="https://suckless.org/hacking/">Patching documentation</a></p>
 <p>Click the download link on the <a href="https://st.suckless.org/">st</a> website at the very bottom and extract (replace the version number):</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cd $HOME/Downloads/ 
 </span></span><span style="display:flex;"><span>tar xvf st-X.X.tar.gz

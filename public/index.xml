@@ -7,14 +7,38 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 10 Nov 2022 19:49:41 +0500</lastBuildDate><atom:link href="https://rosharp.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Nov 2022 14:06:53 +0500</lastBuildDate><atom:link href="https://rosharp.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Multimonitor setup in bspwm</title>
+      <title>Take Screenshots with Bspwm and ImageMagick</title>
+      <link>https://rosharp.github.io/posts/take-screenshots-in-bspwm-with-imagemagick/</link>
+      <pubDate>Tue, 15 Nov 2022 14:06:53 +0500</pubDate>
+      
+      <guid>https://rosharp.github.io/posts/take-screenshots-in-bspwm-with-imagemagick/</guid>
+      <description>Prerequisites Packages:
+bspwm sxhkd imagemagick (in some repos &amp;lsquo;ImageMagick&amp;rsquo;) notify-send bspwmrc Initialize sxhkd in your bspwmrc (by default, located in $HOME/.config/bspwm/bspwmrc);
+pgrep -x sxhkd &amp;gt; /dev/null || sxhkd &amp;amp; Custom directory You can create a custom directory to keep your screenshots in there, for example:
+mkdir $HOME/Pictures/Screenshots/ sxhkdrc Let&amp;rsquo;s create keybindingds in sxhkdrc (by default, located in $HOME/.config/sxhkd/sxhkdrc).
+Take a screenshot of a certain area and save it: super + p import $HOME/Pictures/Screenshots/Screenshot\ $(date).</description>
+    </item>
+    
+    <item>
+      <title>How to easily host a Hugo website on Github Pages</title>
+      <link>https://rosharp.github.io/posts/simply-host-hugo-website-on-github-pages/</link>
+      <pubDate>Sat, 12 Nov 2022 18:14:20 +0500</pubDate>
+      
+      <guid>https://rosharp.github.io/posts/simply-host-hugo-website-on-github-pages/</guid>
+      <description>Documentation:
+Hugo Github Pages Prerequisites Steps from Quick Start Have some content in .md in /content folder Theme installed (themes list) Separate Github repository for the project created Action If you have cloned repositories in the /themes folder, remove .git directories in them. Otherwise, it will cause an error when building remotely.
+Build your project into /public folder: hugo Add all the files from the project root folder to a commit and push it to the repo.</description>
+    </item>
+    
+    <item>
+      <title>Multiple monitor setup - bspwm &#43; Polybar</title>
       <link>https://rosharp.github.io/posts/multiple-monitor-setup-bspwm-&#43;-polybar/</link>
       <pubDate>Thu, 10 Nov 2022 19:49:41 +0500</pubDate>
       
       <guid>https://rosharp.github.io/posts/multiple-monitor-setup-bspwm-&#43;-polybar/</guid>
-      <description>Multiple monitor setup - bspwm + Polybar Required packages:
+      <description>Required packages:
 bspwm polybar xrandr autorandr Detect connected displays First of all, we want to check the discriptors of connected displays with this command:
 &amp;gt; xrandr --listmonitors Monitors: 2 0: +*eDP1 1920/280x1080/160+0+0 eDP1 1: +HDMI2 1680/470x1050/300+1920+0 HDMI2 Let&amp;rsquo;s remember these; I&amp;rsquo;ll describe my monitors as eDP1 (my laptop&amp;rsquo;s display) and HDMI2 (external monitor).
 Startup script Next, we&amp;rsquo;re going to create a script which detects an external monitor when connected, moves bspwm desktops to it and removes those when a monitor is disconnected.</description>
@@ -31,16 +55,17 @@ List asdf -asdf Dictionary Definitions asdf asdf </description>
     </item>
     
     <item>
-      <title>Install and patch st</title>
+      <title>How to install and patch st</title>
       <link>https://rosharp.github.io/posts/how-to-patch-simple-terminal/</link>
       <pubDate>Wed, 09 Nov 2022 19:30:30 +0500</pubDate>
       
       <guid>https://rosharp.github.io/posts/how-to-patch-simple-terminal/</guid>
-      <description>How to install and patch st Patching documentation
+      <description>Patching documentation
 Click the download link on the st website at the very bottom and extract (replace the version number):
 cd $HOME/Downloads/ tar xvf st-X.X.tar.gz Now, you can build and have a working binary of st (although, very minimal):
 cd st-X.X/ make clean install Check out the available patches here. Take the one you need and download with:
-curl -O &amp;lt;download link&amp;gt; Apply the patch:</description>
+curl -O &amp;lt;download link&amp;gt; Apply the patch:
+patch -p1 &amp;lt; path/to/patch.diff And rebuild the binary:</description>
     </item>
     
   </channel>
