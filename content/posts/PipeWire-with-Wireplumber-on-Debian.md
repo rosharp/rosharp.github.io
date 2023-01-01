@@ -7,7 +7,7 @@ date: 2023-01-01T17:30:15+05:00
 
 To be able to download Wireplumber, let's first add the repository.
 
-Find your architecture [here](https://packages.debian.org/sid/wireplumber) and follow the instructions. Here's the exmaple for AMD64 machines, add this to your `/etc/apt/sources.list`:
+Find your architecture [here](https://packages.debian.org/sid/wireplumber) and follow the instructions. Here's an example for AMD64 machines, add this to your `/etc/apt/sources.list`:
 
 ```shell
 deb http://ftp.de.debian.org/debian sid main
