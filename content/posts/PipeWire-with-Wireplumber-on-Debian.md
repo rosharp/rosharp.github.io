@@ -13,6 +13,8 @@ Find your architecture [here](https://packages.debian.org/sid/wireplumber) and f
 deb http://ftp.de.debian.org/debian sid main
 ```
 
+Be sure to remove the repository from `/etc/apt/sources.list.d/` after installing all the necessary packages. If you run `apt update && apt upgrade` while having the added unstable repo in the list, upgrading will switch your system to unstable.
+
 ## Installation
 
 Now, update the packages:
