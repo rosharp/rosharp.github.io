@@ -1,6 +1,7 @@
 ---
 title: PipeWire with Wireplumber on Debian
 date: 2023-01-01T17:30:15+05:00
+tags: linux debian wireplumber
 ---
 
 ## Add the repo

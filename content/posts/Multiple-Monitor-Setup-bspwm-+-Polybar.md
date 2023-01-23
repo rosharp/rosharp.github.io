@@ -1,6 +1,7 @@
 ---
 title: Multiple monitor setup - bspwm + Polybar
 date: 2022-11-10T19:49:41+05:00
+tags: linux bspwm
 ---
 
 ![Image](/Multiple-Monitor-Setup-bspwm-+-Polybar/IMG_0120.PNG)

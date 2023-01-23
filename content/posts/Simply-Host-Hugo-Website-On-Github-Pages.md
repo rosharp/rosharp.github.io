@@ -1,6 +1,7 @@
 ---
 title: How to easily host a Hugo website on Github Pages
 date: 2022-11-12T18:14:20+05:00
+tags: hugo
 ---
 
 Documentation:

@@ -1,5 +1,4 @@
 ---
-title: "My Homepage"
+title: "My Blogs"
 ---
-I am adding stuff to my homepage right now.
-
+Here are my blogs.
